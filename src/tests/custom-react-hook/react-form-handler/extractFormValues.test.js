@@ -1,4 +1,4 @@
-import { extractFormValues } from "../../../custom-form-hook/react-form-handler";
+import { extractFormValues } from "../../../custom-form-hook/helper/extractFormValues";
 import { requiredValidator, sampleFormStructure } from "./test-data";
 
 describe("extactFromValues", () => {

@@ -1,4 +1,4 @@
-import { initialzeFormErrors } from "../../../custom-form-hook/react-form-handler";
+import { initialzeFormErrors } from "../../../custom-form-hook/helper/initializeFormErrors";
 // import { describe, it, expect } from 'jest'
 import { minLengthValidator, requiredValidator, sampleFormStructure } from "./test-data";
 

@@ -1,4 +1,4 @@
-import { validateFormErrors } from "../../../custom-form-hook/react-form-handler";
+import { validateFormErrors } from "../../../custom-form-hook/helper/validateFormErrors";
 import { sampleFormStructure } from "./test-data";
 
 describe("validateFormErrors", () => {

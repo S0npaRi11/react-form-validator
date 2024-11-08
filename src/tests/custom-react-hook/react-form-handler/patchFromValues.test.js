@@ -1,4 +1,4 @@
-import { patchFormValues } from "../../../custom-form-hook/react-form-handler";
+import { patchFormValues } from "../../../custom-form-hook/helper/patchFormValues";
 
 import { sampleFormStructure } from "./test-data";
 describe("patchFormValues", () => {

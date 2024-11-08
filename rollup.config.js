@@ -3,7 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
 export default {
-  input: "src/useReactFormHandler.js",
+  input: "src/custom-form-hook/react-form-handler.js",
   output: [
     {
       file: "dist/index.js",
