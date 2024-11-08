@@ -1,4 +1,4 @@
-# React Form Validator
+# React Form State Handler
 
 A React hook for managing form values and validations, simillar to Angular Reactive Forms.
 
