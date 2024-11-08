@@ -1,5 +1,5 @@
 {
-  "name": "react-form-validator",
+  "name": "react-form-state-handler",
   "version": "1.0.0",
   "type": "module",
   "description": "A react hook for handling form data and validations",
@@ -27,7 +27,7 @@
     "form",
     "validation"
   ],
-  "author": "s0npaRi11",
+  "author": "s0npari11",
   "license": "MIT",
   "dependencies": {
     "react": "^18.3.1",
