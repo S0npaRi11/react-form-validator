@@ -5,8 +5,8 @@
 
 export function max(number){
     return function(name, value){
-        if(typeof value === 'number'){
-            if(value > number){
+        if(typeof +value === 'number'){
+            if(!value || +value > number){
                 return {
                     message: `${name} value can't be greater than ${number}`,
                     name:'max',

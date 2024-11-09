@@ -3,6 +3,7 @@
 import React from 'react'
 import { useReactFormHandler } from './custom-form-hook/react-form-handler'
 import { Validators } from './custom-form-hook/validators'
+import { rangeValidator } from './customFormValidator'
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
     email:{},
     password: {
       validators:[Validators.pattern(/[A-Z]/)]
+    },
+    number: {
+      value: 12,
+      validators: [rangeValidator(5,10)]
     }
   })
 
@@ -23,8 +28,6 @@ function App() {
 
   function submit(event){
     event.preventDefault()
-    console.log(form())
-    console.log(errors)
   }
 
   function patchValues(event){
@@ -45,6 +48,7 @@ function App() {
         <input type="email" name="email" value={form().email || ''} onChange={handle} /> <br />
         <input type="password" name="password" value={form().password || ''} onChange={handle} /> <br />
         {errors?.password && <span> {errors.password.pattern} </span>} <br />
+        <input type="number" name="number" value={form().number || 0} onChange={handle} />
 
 
         <button onClick={submit}> submit </button>

@@ -18,7 +18,7 @@ export function minLength(length){
             return {
                 message: `${name} value has to be at least of length ${length}`,
                 name: 'minLength',
-                isValid: true
+                isValid: false
             }
         }else{
             return {

@@ -18,7 +18,7 @@ export function maxLength(length){
             return {
                 message: `${name} value can't be of length greater than ${length}`,
                 name: 'maxLength',
-                isValid: true
+                isValid: false
             }
         }else{
             return {
