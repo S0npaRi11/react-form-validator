@@ -8,7 +8,7 @@ function App() {
 
   const [form, handleForm, errors,patchValue] = useReactFormHandler({
     name: {
-      validators: [Validators.required()],
+      validators: [Validators.required(), Validators.minLength(5)],
       value: ''
     },
     email:{},

@@ -10,7 +10,7 @@ export function maxLength(length){
     }
 
     return function(name, value){
-        if(!value || !value.length){
+        if(!Object.prototype.hasOwnProperty.call(value, "length")){
             // console.error('maxLength validator only works with types that have numeric length property')
             throw new Error('maxLength validator only works with types that have numeric length property')
         }
